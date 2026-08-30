@@ -25,4 +25,23 @@
   } else {
     document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('in-view'); });
   }
+
+  var devisForm = document.querySelector('.devis-form');
+  if (devisForm) {
+    devisForm.addEventListener('submit', function(e){
+      e.preventDefault();
+      var nom = devisForm.nom.value.trim();
+      var tel = devisForm.telephone.value.trim();
+      var msg = devisForm.message.value.trim();
+      var lot = devisForm.getAttribute('data-lot') || '';
+      var phone = devisForm.getAttribute('data-wa-phone');
+
+      var lines = ['Bonjour, je m\'appelle ' + nom + ' (tél. ' + tel + ').'];
+      if (lot) lines.push('Demande de devis : ' + lot + '.');
+      if (msg) lines.push(msg);
+
+      var text = encodeURIComponent(lines.join('\n'));
+      window.open('https://wa.me/' + phone + '?text=' + text, '_blank', 'noopener');
+    });
+  }
 })();

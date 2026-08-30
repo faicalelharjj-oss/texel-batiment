@@ -44,7 +44,7 @@
     <div class="hero-inner">
       <a class="breadcrumb" href="index.html#services">← Retour aux services</a>
       <p class="eyebrow">Lot 03 — Nos services</p>
-      <h1>AMÉNAGEMENT</h1>
+      <h1>Aménagement</h1>
       <p class="hero-lead">Cloisons, revêtements, faux plafonds et agencement sur mesure : nous transformons vos espaces intérieurs et extérieurs, du bureau professionnel au logement.</p>
       <div class="hero-actions">
         <a class="btn btn-safety" href="tel:+33661837452">Appeler — 06 61 83 74 52</a>
@@ -69,10 +69,24 @@
     <div class="lot-cta-inner">
       <p class="eyebrow eyebrow-dark">Un projet en aménagement ?</p>
       <h2>Demandez votre devis gratuit</h2>
-      <p>Réponse rapide, sans engagement — par téléphone, WhatsApp ou email.</p>
-      <div class="hero-actions">
-        <a class="btn btn-whatsapp" href="https://wa.me/33661837452?text=Bonjour%2C%20je%20souhaite%20un%20devis%20pour%20%3A%20Am%C3%A9nagement" target="_blank" rel="noopener">Écrire sur WhatsApp</a>
-        <a class="btn btn-safety" href="tel:+33661837452">Appeler — 06 61 83 74 52</a>
+      <p>Remplissez le formulaire : votre message part directement sur WhatsApp.</p>
+      <form class="devis-form" data-lot="Aménagement" data-wa-phone="33661837452">
+        <div class="form-row">
+          <label for="nom-amenagement">Nom</label>
+          <input type="text" id="nom-amenagement" name="nom" required placeholder="Votre nom">
+        </div>
+        <div class="form-row">
+          <label for="tel-amenagement">Téléphone</label>
+          <input type="tel" id="tel-amenagement" name="telephone" required placeholder="06 12 34 56 78">
+        </div>
+        <div class="form-row">
+          <label for="msg-amenagement">Votre projet</label>
+          <textarea id="msg-amenagement" name="message" rows="3" placeholder="Décrivez votre projet en quelques mots"></textarea>
+        </div>
+        <button type="submit" class="btn btn-whatsapp">Envoyer sur WhatsApp</button>
+      </form>
+      <div class="lot-cta-alt">
+        <a class="btn btn-outline-onink" href="tel:+33661837452">Appeler — 06 61 83 74 52</a>
         <a class="btn btn-outline-onink" href="mailto:texel.batiment@gmail.com?subject=Demande%20de%20devis%20-%20Amenagement">Envoyer un email</a>
       </div>
     </div>
