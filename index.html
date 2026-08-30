@@ -6,6 +6,9 @@
 <meta name="description" content="Texel Bâtiment — entreprise générale de construction de bâtiments et ouvrages d'art : aménagement, étanchéité, électricité, climatisation, peinture, bâtiment modulaire. Devis gratuit au 06 61 83 74 52.">
 <title>Texel Bâtiment — Construction de bâtiments &amp; ouvrages d'art</title>
 <script>document.documentElement.classList.replace('no-js','js');</script>
+<link rel="icon" type="image/png" href="images/favicon-32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="images/favicon.png" sizes="512x512">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
@@ -121,7 +124,7 @@
     font-family:var(--font-display); font-weight:800;
     font-size:1.4rem; letter-spacing:0.02em;
   }
-  .logo svg{fill:var(--safety); flex-shrink:0;}
+  .logo-mark{height:38px; width:auto; flex-shrink:0;}
   .logo span{color:var(--blue-line);}
   .nav{display:flex; gap:1.75rem;}
   .nav a{
@@ -346,11 +349,10 @@
     max-width:1180px; margin:0 auto; padding:3rem 1.5rem 2rem;
     display:grid; gap:2rem; grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
   }
-  .footer-brand{font-family:var(--font-display); font-size:1.3rem; font-weight:800; color:var(--text-onink);}
-  .footer-brand span{color:var(--blue-line);}
+  .footer-brand img{height:64px; width:auto; display:block;}
   .footer-brand p{
     font-family:var(--font-body); text-transform:none; font-weight:400;
-    font-size:0.88rem; margin-top:0.5rem; color:var(--muted-onink);
+    font-size:0.88rem; margin-top:0.75rem; color:var(--muted-onink);
   }
   .footer-lots{display:flex; flex-direction:column; gap:0.5rem; font-size:0.9rem;}
   .footer-lots a{text-decoration:none; color:var(--muted-onink);}
@@ -368,7 +370,7 @@
 <header class="site-header">
   <div class="header-inner">
     <a class="logo" href="#top" aria-label="Texel Bâtiment — accueil">
-      <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="16" height="3"></rect><rect x="10.4" y="6" width="3.2" height="12"></rect><rect x="4" y="18" width="16" height="3"></rect></svg>
+      <img class="logo-mark" src="images/logo-mark.png" alt="" width="700" height="452">
       TEXEL <span>BÂTIMENT</span>
     </a>
     <nav class="nav" id="nav">
@@ -560,7 +562,10 @@
 
 <footer class="site-footer">
   <div class="footer-inner">
-    <div class="footer-brand">TEXEL <span>BÂTIMENT</span><p>Construction de bâtiments et ouvrages d'art.</p></div>
+    <div class="footer-brand">
+      <img src="images/logo-full.png" alt="Texel Bâtiment — Génie civil &amp; aménagement" width="640" height="609">
+      <p>Construction de bâtiments et ouvrages d'art.</p>
+    </div>
     <nav class="footer-lots" aria-label="Nos services">
       <a href="#services">Aménagement</a>
       <a href="#services">Étanchéité</a>
