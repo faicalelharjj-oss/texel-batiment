@@ -1,0 +1,16 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model DevisRequest {
+  id        String   @id @default(cuid())
+  lot       String
+  nom       String
+  telephone String
+  message   String?
+  createdAt DateTime @default(now())
+}

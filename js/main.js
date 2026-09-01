@@ -42,6 +42,12 @@
 
       var text = encodeURIComponent(lines.join('\n'));
       window.open('https://wa.me/' + phone + '?text=' + text, '_blank', 'noopener');
+
+      fetch('/api/devis', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({lot: lot, nom: nom, telephone: tel, message: msg})
+      }).catch(function(err){ console.warn('Enregistrement du devis impossible :', err); });
     });
   }
 })();
