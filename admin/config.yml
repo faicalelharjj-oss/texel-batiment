@@ -1,0 +1,66 @@
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: "images"
+public_folder: "/images"
+
+locale: "fr"
+
+collections:
+  - name: "lots"
+    label: "Services (lots)"
+    label_singular: "Lot"
+    folder: "lots"
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    identifier_field: "title"
+    fields:
+      - { label: "Nom du service", name: "title", widget: "string" }
+      - { label: "Numéro de lot (ex: 01, 02...)", name: "lotNumber", widget: "string" }
+      - { label: "Photo principale (bandeau)", name: "heroPhoto", widget: "image" }
+      - { label: "Texte d'introduction", name: "lead", widget: "text" }
+      - { label: "Description pour Google (SEO)", name: "metaDescription", widget: "text" }
+      - label: "Galerie de photos"
+        name: "gallery"
+        widget: "list"
+        fields:
+          - { label: "Photo", name: "src", widget: "image" }
+          - { label: "Description de la photo", name: "alt", widget: "string" }
+      - { label: "Icône (ne pas modifier)", name: "icon", widget: "hidden" }
+
+  - name: "site"
+    label: "Paramètres du site"
+    editor:
+      preview: false
+    files:
+      - name: "settings"
+        label: "Accueil et coordonnées"
+        file: "_data/site.json"
+        format: "json"
+        fields:
+          - { label: "Nom de l'entreprise", name: "companyName", widget: "string" }
+          - { label: "Téléphone (affiché)", name: "phoneDisplay", widget: "string", hint: "ex: 06 61 83 74 52" }
+          - { label: "Téléphone (format international)", name: "phoneIntl", widget: "string", hint: "ex: +33661837452" }
+          - { label: "Numéro WhatsApp (sans le +)", name: "whatsappNumber", widget: "string", hint: "ex: 33661837452" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Message WhatsApp par défaut", name: "defaultWaMessage", widget: "text" }
+          - { label: "Bandeau d'accueil (eyebrow)", name: "heroEyebrow", widget: "string" }
+          - { label: "Accroche principale", name: "heroTagline", widget: "string" }
+          - { label: "Texte de présentation", name: "heroLead", widget: "text" }
+          - { label: "Domaines d'expertise (liste)", name: "heroExpertise", widget: "list" }
+          - { label: "Photo de fond (accueil)", name: "heroPhoto", widget: "image" }
+          - { label: "Titre section \"Pourquoi nous\"", name: "whyTitle", widget: "string" }
+          - { label: "Photo section \"Pourquoi nous\"", name: "whyPhoto", widget: "image" }
+          - { label: "Arguments (liste)", name: "whyList", widget: "list" }
+          - label: "Réalisations mises en avant"
+            name: "realisations"
+            widget: "list"
+            fields:
+              - { label: "Photo", name: "photo", widget: "image" }
+              - { label: "Étiquette", name: "tag", widget: "string" }
+              - { label: "Légende", name: "caption", widget: "string" }
+          - { label: "Photo bandeau \"Un projet en tête\"", name: "showcasePhoto", widget: "image" }
+          - { label: "Titre du bandeau", name: "showcaseTitle", widget: "string" }
+          - { label: "Texte du bandeau", name: "showcaseText", widget: "text" }

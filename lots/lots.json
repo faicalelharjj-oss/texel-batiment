@@ -1,0 +1,8 @@
+{
+  "layout": "lot.njk",
+  "permalink": "/{{ page.fileSlug }}.html",
+  "tags": ["lots"],
+  "eleventyComputed": {
+    "pageTitle": "{{ title }} — Texel Bâtiment"
+  }
+}

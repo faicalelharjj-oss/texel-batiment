@@ -1,0 +1,27 @@
+---
+title: "Aménagement"
+lotNumber: "03"
+heroPhoto: "/images/amenagement.jpg"
+icon: '<rect x="6" y="7" width="28" height="26"></rect><line x1="20" y1="7" x2="20" y2="20"></line><line x1="6" y1="20" x2="20" y2="20"></line><path d="M20 20 A8 8 0 0 1 28 28"></path>'
+metaDescription: "Aménagement intérieur et extérieur : cloisons, revêtements, faux plafonds. Texel Bâtiment transforme vos espaces professionnels et résidentiels."
+lead: "Cloisons, revêtements, faux plafonds et agencement sur mesure : nous transformons vos espaces intérieurs et extérieurs, du bureau professionnel au logement."
+gallery:
+  - src: "/images/amenagement.jpg"
+    alt: "Ouvrier posant une cloison lors d'un chantier d'aménagement intérieur"
+  - src: "/images/amenagement-2.jpg"
+    alt: "Équipe au travail lors d'un aménagement de bureaux"
+  - src: "/images/amenagement-3.jpg"
+    alt: "Pose de cloisons vitrées dans un espace de bureaux"
+  - src: "/images/amenagement-4.jpg"
+    alt: "Aménagement intérieur en cours, sol protégé et éclairage suspendu"
+  - src: "/images/amenagement-5.jpg"
+    alt: "Chantier d'aménagement de bureaux, ouvriers sur échelle"
+  - src: "/images/amenagement-6.jpg"
+    alt: "Équipe Texel Bâtiment sur un chantier d'aménagement de bureaux"
+  - src: "/images/amenagement-7.jpg"
+    alt: "Aménagement intérieur, pose de finitions dans un espace de bureaux"
+  - src: "/images/amenagement-8.jpg"
+    alt: "Salle de réunion aménagée, table et écran"
+  - src: "/images/amenagement-9.jpg"
+    alt: "Bureaux aménagés avec espaces de travail et rangements"
+---
