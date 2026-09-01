@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://texel-batiment.fr/sitemap.xml
+Sitemap: https://texel-batiment.vercel.app/sitemap.xml
