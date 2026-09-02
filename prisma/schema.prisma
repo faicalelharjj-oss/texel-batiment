@@ -6,6 +6,59 @@ datasource db {
   provider = "postgresql"
 }
 
+model Lot {
+  id              String     @id @default(cuid())
+  slug            String     @unique
+  order           Int        @default(0)
+  title           String
+  lead            String
+  metaDescription String
+  heroPhoto       String
+  icon            String
+  gallery         LotPhoto[]
+  createdAt       DateTime   @default(now())
+  updatedAt       DateTime   @updatedAt
+}
+
+model LotPhoto {
+  id    String @id @default(cuid())
+  lot   Lot    @relation(fields: [lotId], references: [id], onDelete: Cascade)
+  lotId String
+  src   String
+  alt   String
+  order Int    @default(0)
+}
+
+model Settings {
+  id               Int      @id
+  companyName      String
+  phoneDisplay     String
+  phoneIntl        String
+  whatsappNumber   String
+  email            String
+  defaultWaMessage String
+  heroEyebrow      String
+  heroTagline      String
+  heroLead         String
+  heroExpertise    String[]
+  heroPhoto        String
+  whyTitle         String
+  whyPhoto         String
+  whyList          String[]
+  showcasePhoto    String
+  showcaseTitle    String
+  showcaseText     String
+  updatedAt        DateTime @updatedAt
+}
+
+model Realisation {
+  id      String @id @default(cuid())
+  order   Int    @default(0)
+  photo   String
+  tag     String
+  caption String
+}
+
 model DevisRequest {
   id        String   @id @default(cuid())
   lot       String

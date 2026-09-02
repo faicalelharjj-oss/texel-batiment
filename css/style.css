@@ -149,18 +149,16 @@ img{max-width:100%;}
   .phone-chip{display:none;}
   .header-inner .btn-safety{padding:0.7em 1em; font-size:0.85rem;}
 
-  /* Collapsible dropdown only once JS can drive the toggle button;
-     without it, the nav above stays a plain visible row. */
-  .js .nav{
+  .nav{
     display:flex; flex-direction:column; gap:0; justify-content:flex-start; padding:0;
     position:absolute; top:100%; left:0; right:0;
     background:var(--ink);
     max-height:0; overflow:hidden; border-bottom:1px solid rgba(127,178,206,0.25);
     transition:max-height .25s ease;
   }
-  .js .nav a{padding:0.9rem 1.5rem; border-top:1px solid rgba(127,178,206,0.12);}
-  .js .nav.open{max-height:320px;}
-  .js .nav-toggle{display:block;}
+  .nav a{padding:0.9rem 1.5rem; border-top:1px solid rgba(127,178,206,0.12);}
+  .nav.open{max-height:320px;}
+  .nav-toggle{display:block;}
 }
 
 /* ---------- Hero ---------- */
@@ -251,8 +249,8 @@ img{max-width:100%;}
   display:flex; flex-direction:column; position:relative; overflow:hidden;
 }
 @media (prefers-reduced-motion:no-preference){
-  .js .reveal{opacity:0; transform:translateY(18px); transition:opacity .55s ease, transform .55s ease;}
-  .js .reveal.in-view{opacity:1; transform:none;}
+  .reveal{opacity:0; transform:translateY(18px); transition:opacity .55s ease, transform .55s ease;}
+  .reveal.in-view{opacity:1; transform:none;}
 }
 .lot-photo{position:relative; aspect-ratio:4/3; overflow:hidden; background:var(--paper-2);}
 .lot-photo img{width:100%; height:100%; object-fit:cover; display:block;}
