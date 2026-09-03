@@ -1,12 +1,18 @@
 import Link from "next/link";
 import Image from "next/image";
-import { getSettings, getRealisations } from "@/lib/settings";
+import { getSettings, getRealisations, getClients } from "@/lib/settings";
 import { getLots } from "@/lib/lots";
+import ClientsCarousel from "@/components/ClientsCarousel";
 
 export const dynamic = "force-dynamic";
 
 export default async function HomePage() {
-  const [settings, lots, realisations] = await Promise.all([getSettings(), getLots(), getRealisations()]);
+  const [settings, lots, realisations, clients] = await Promise.all([
+    getSettings(),
+    getLots(),
+    getRealisations(),
+    getClients(),
+  ]);
 
   return (
     <>
@@ -95,6 +101,16 @@ export default async function HomePage() {
           ))}
         </div>
       </section>
+
+      {clients.length > 0 && (
+        <section className="clients">
+          <div className="section-head">
+            <p className="eyebrow eyebrow-dark">Ils nous font confiance</p>
+            <h2>Nos clients</h2>
+          </div>
+          <ClientsCarousel clients={clients} />
+        </section>
+      )}
 
       <section className="why" id="apropos">
         <div className="why-inner">

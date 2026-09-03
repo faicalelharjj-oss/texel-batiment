@@ -9,3 +9,7 @@ export async function getSettings() {
 export async function getRealisations() {
   return prisma.realisation.findMany({ orderBy: { order: "asc" } });
 }
+
+export async function getClients() {
+  return prisma.client.findMany({ orderBy: { order: "asc" } });
+}

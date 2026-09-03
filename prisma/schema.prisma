@@ -59,6 +59,13 @@ model Realisation {
   caption String
 }
 
+model Client {
+  id    String @id @default(cuid())
+  order Int    @default(0)
+  name  String
+  logo  String
+}
+
 model DevisRequest {
   id        String   @id @default(cuid())
   lot       String
