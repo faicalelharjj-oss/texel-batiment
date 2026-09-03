@@ -23,8 +23,7 @@ export default function Header({
     <header className="site-header">
       <div className="header-inner">
         <Link className="logo" href="/" aria-label={`${companyName} — accueil`} onClick={closeNav}>
-          <Image className="logo-mark" src="/images/logo-mark.png" alt="" width={640} height={486} />
-          TEXEL <span>BÂTIMENT</span>
+          <Image className="logo-mark" src="/images/logo.jpg" alt={companyName} width={700} height={700} />
         </Link>
         <nav className={`nav${open ? " open" : ""}`} id="nav">
           <Link href="/#services" onClick={closeNav}>Services</Link>

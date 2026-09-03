@@ -110,8 +110,10 @@ img{max-width:100%;}
   font-family:var(--font-display); font-weight:800;
   font-size:1.4rem; letter-spacing:0.02em;
 }
-.logo-mark{height:52px; width:auto; flex-shrink:0;}
-.logo span{color:var(--blue-line);}
+.logo-mark{
+  height:56px; width:auto; flex-shrink:0;
+  background:#fff; border-radius:6px; padding:4px;
+}
 .nav{display:flex; gap:1.75rem;}
 .nav a{
   text-decoration:none; color:var(--muted-onink);
@@ -400,7 +402,7 @@ img{max-width:100%;}
   max-width:1180px; margin:0 auto; padding:3rem 1.5rem 2rem;
   display:grid; gap:2rem; grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
 }
-.footer-brand img{height:64px; width:auto; display:block;}
+.footer-brand img{height:110px; width:auto; display:block; background:#fff; border-radius:8px; padding:6px;}
 .footer-brand p{
   font-family:var(--font-body); text-transform:none; font-weight:400;
   font-size:0.88rem; margin-top:0.75rem; color:var(--muted-onink);

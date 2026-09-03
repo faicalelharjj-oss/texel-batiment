@@ -20,7 +20,7 @@ export default function Footer({
     <footer className="site-footer">
       <div className="footer-inner">
         <div className="footer-brand">
-          <Image src="/images/logo-full.png" alt={`${companyName} — Génie civil & aménagement`} width={640} height={609} />
+          <Image src="/images/logo.jpg" alt={`${companyName} — Génie civil & aménagement`} width={700} height={700} />
           <p>Construction de bâtiments et ouvrages d&rsquo;art.</p>
         </div>
         <nav className="footer-lots" aria-label="Nos services">
