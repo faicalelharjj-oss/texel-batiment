@@ -110,7 +110,7 @@ img{max-width:100%;}
   font-family:var(--font-display); font-weight:800;
   font-size:1.4rem; letter-spacing:0.02em;
 }
-.logo-mark{height:38px; width:auto; flex-shrink:0;}
+.logo-mark{height:52px; width:auto; flex-shrink:0;}
 .logo span{color:var(--blue-line);}
 .nav{display:flex; gap:1.75rem;}
 .nav a{
