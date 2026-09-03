@@ -307,18 +307,18 @@ img{max-width:100%;}
 .clients-carousel{display:flex; flex-direction:column; align-items:center; gap:1.75rem;}
 .clients-track{
   display:flex; flex-wrap:wrap; align-items:center; justify-content:center;
-  gap:clamp(1.75rem,5vw,3.5rem); min-height:64px; width:100%;
+  gap:clamp(1.75rem,5vw,3.5rem); min-height:104px; width:100%;
 }
 @media (prefers-reduced-motion:no-preference){
   .clients-track{animation:clients-fade .5s ease;}
 }
 @keyframes clients-fade{ from{opacity:0;} to{opacity:1;} }
 .clients-logo img{
-  max-height:56px; max-width:150px; width:auto; height:auto;
-  object-fit:contain; filter:grayscale(1); opacity:0.75;
-  transition:filter .2s ease, opacity .2s ease;
+  max-height:96px; max-width:220px; width:auto; height:auto;
+  object-fit:contain;
+  transition:transform .2s ease;
 }
-.clients-logo img:hover{filter:grayscale(0); opacity:1;}
+.clients-logo img:hover{transform:scale(1.05);}
 .clients-dots{display:flex; gap:0.5rem;}
 .clients-dots button{
   width:9px; height:9px; border-radius:50%; border:none; padding:0;
