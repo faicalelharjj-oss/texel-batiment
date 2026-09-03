@@ -38,9 +38,9 @@ export default async function HomePage() {
             <a className="btn btn-safety" href={`tel:${settings.phoneIntl}`}>
               Appeler — {settings.phoneDisplay}
             </a>
-            <a className="btn btn-outline" href={`mailto:${settings.email}?subject=Demande%20de%20devis`}>
+            <Link className="btn btn-outline" href="/devis">
               Demander un devis
-            </a>
+            </Link>
           </div>
         </div>
         <p className="corner corner-bl">{settings.companyName}</p>

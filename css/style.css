@@ -351,14 +351,16 @@ img{max-width:100%;}
   font-family:var(--font-mono); font-size:0.72rem; letter-spacing:0.08em;
   text-transform:uppercase; color:var(--muted-onink);
 }
-.form-row input, .form-row textarea{
+.form-row input, .form-row textarea, .form-row select{
   font-family:var(--font-body); font-size:0.95rem; padding:0.7rem 0.85rem;
   border:1px solid rgba(159,183,194,0.4); border-radius:2px;
   background:rgba(234,242,246,0.06); color:var(--text-onink);
   resize:vertical;
 }
+.form-row select{background:var(--ink);}
+.form-row select option{background:var(--ink); color:var(--text-onink);}
 .form-row input::placeholder, .form-row textarea::placeholder{color:var(--muted-onink); opacity:0.75;}
-.form-row input:focus, .form-row textarea:focus{
+.form-row input:focus, .form-row textarea:focus, .form-row select:focus{
   outline:2px solid var(--blue-line); outline-offset:1px; border-color:var(--blue-line);
 }
 .devis-form .btn{align-self:center; margin-top:0.2rem;}
