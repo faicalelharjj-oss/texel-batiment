@@ -103,7 +103,7 @@ export default async function HomePage() {
       </section>
 
       {clients.length > 0 && (
-        <section className="clients">
+        <section className="clients" id="clients">
           <div className="section-head">
             <p className="eyebrow eyebrow-dark">Ils nous font confiance</p>
             <h2>Nos clients</h2>

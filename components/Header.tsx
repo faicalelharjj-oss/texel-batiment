@@ -28,6 +28,7 @@ export default function Header({
         <nav className={`nav${open ? " open" : ""}`} id="nav">
           <Link href="/#services" onClick={closeNav}>Services</Link>
           <Link href="/#realisations" onClick={closeNav}>Réalisations</Link>
+          <Link href="/#clients" onClick={closeNav}>Nos clients</Link>
           <Link href="/#apropos" onClick={closeNav}>À propos</Link>
           <Link href="/#contact" onClick={closeNav}>Contact</Link>
         </nav>
